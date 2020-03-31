@@ -12,7 +12,8 @@
             position: relative;
         }
 
-        body, html {
+        body,
+        html {
             width: 100vw;
             height: 100vh;
         }
@@ -23,9 +24,9 @@
         }
 
         .box-shadow {
-            -webkit-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
-            -moz-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
-            box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
         }
 
         .main-container-grid {
@@ -35,7 +36,8 @@
             grid-row-gap: 1em;
         }
 
-        .r1, .r3 {
+        .r1,
+        .r3 {
             display: grid;
             background-color: #CCC;
             padding: 1em;
@@ -59,7 +61,8 @@
             grid-column-gap: 1em;
         }
 
-        .c1, .c3 {
+        .c1,
+        .c3 {
             background-color: rgba(221, 221, 221, 0.623);
         }
 
@@ -67,7 +70,7 @@
             min-width: 200px;
         }
 
-        .txt-center{
+        .txt-center {
             text-align: center;
             margin: 15px auto 0px;
             border-bottom: 1px solid rgb(148, 148, 148);
@@ -78,7 +81,7 @@
             list-style-type: none;
         }
 
-        .left-nav > li > a {
+        .left-nav>li>a {
             display: block;
             padding: 15px 0px 15px 30px;
             background-color: rgba(221, 221, 221, 0.623);
@@ -86,12 +89,12 @@
             text-decoration: none;
             transition-duration: 0.7s;
         }
-    
-        .left-nav > li > a:hover {
+
+        .left-nav>li>a:hover {
             background-color: rgb(179, 179, 179);
         }
 
-        .c2{
+        .c2 {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             /* grid-template-rows: 1fr 1fr 1fr; */
@@ -99,13 +102,13 @@
             grid-gap: 1em;
         }
 
-        .c2-content{
+        .c2-content {
             grid-column: 1 / 5;
             height: 37px;
             width: 100%;
         }
 
-        .c2 > img {
+        .c2>img {
             width: 100%;
             align-self: center;
             justify-self: center;
@@ -113,7 +116,7 @@
             max-width: 130px;
         }
 
-        .c2 > p {
+        .c2>p {
             grid-column: 1/5;
             padding: 15px 30px;
         }
@@ -122,7 +125,7 @@
             grid-template-columns: 1fr 1fr;
         } */
 
-        .r1 > img {
+        .r1>img {
             margin-top: 15px;
             max-width: 100px;
             max-height: 100px;
@@ -135,7 +138,14 @@
             padding-top: 15px;
         }
 
+        .c2-first-row {
+            grid-column: 1 / 5;
+        }
 
+        .grid-button{
+            padding: 6px 12px;
+            float: right;
+        }
 
     </style>
 
@@ -146,7 +156,7 @@
         <h1>Joshuah Guerrero</h1>
         <img src="images/kfc-logo.png">
     </div>
-    
+
 
     <div class="r2 three-column r2-content">
         <div class="c1 box-shadow">
@@ -163,7 +173,10 @@
         </div>
 
         <div class="c2">
-            <h2 class="txt-center c2-content">Gallery</h2>
+            <div class="c2-first-row">
+                <a href="./gallery-table.html" class="grid-button btn btn-success">Grid View</a>
+                <h2 class="txt-center c2-content">Gallery</h2>
+            </div>
             <img class="box-shadow" src="images/MH Weapon Icons/Charge Blade HD.png">
             <img class="box-shadow" src="images/MH Weapon Icons/Insect Glaive HD.png">
             <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon029.png">
@@ -176,9 +189,11 @@
             <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon046.png">
             <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon048.png">
             <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon057.png">
-            <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nunc ac lorem commodo commodo. Aliquam varius magna ac risus laoreet venenatis. 
-                Suspendisse nec ipsum suscipit, dapibus ante vitae, faucibus purus. Nunc non sollicitudin leo. Cras ullamcorper enim arcu, quis interdum ex lobortis sit amet. 
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nunc ac lorem commodo commodo.
+                Aliquam varius magna ac risus laoreet venenatis.
+                Suspendisse nec ipsum suscipit, dapibus ante vitae, faucibus purus. Nunc non sollicitudin leo. Cras
+                ullamcorper enim arcu, quis interdum ex lobortis sit amet.
             </p>
         </div>
 

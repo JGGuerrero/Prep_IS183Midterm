@@ -54,7 +54,7 @@
 
         .three-column {
             display: grid;
-            grid-template-columns: 2fr 8fr 3fr;
+            grid-template-columns: 2fr 8fr;
             background-color: #FFF;
             grid-column-gap: 1em;
         }
@@ -101,7 +101,7 @@
 
         .c2-content{
             grid-column: 1 / 5;
-            height: 37px;
+            height: 21px;
             width: 100%;
         }
 
@@ -109,13 +109,9 @@
             width: 100%;
             align-self: center;
             justify-self: center;
+
             max-height: 130px;
             max-width: 130px;
-        }
-
-        .c2 > p {
-            grid-column: 1/5;
-            padding: 15px 30px;
         }
 
         /* .r1 {
@@ -128,14 +124,28 @@
             max-height: 100px;
             /* justify-self: right; */
         }
-
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         .r2-content {
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 15px;
         }
 
+        .padding-left {
+            padding-left: 30px;
+        }
 
+        .padding-top {
+            padding-top: 30px;
+        }
+
+        .back-button {
+            float: right;
+            /* padding: 7px 16px; */
+            margin: 30px;
+            color: white;
+            text-decoration: white;
+        }
 
     </style>
 
@@ -161,38 +171,35 @@
                 <li><a href="./login.html">Login</a></li>
             </ul>
         </div>
-
-        <div class="c2">
-            <h2 class="txt-center c2-content">Gallery</h2>
-            <img class="box-shadow" src="images/MH Weapon Icons/Charge Blade HD.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/Insect Glaive HD.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon029.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon030.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon031.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon032.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon034.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon035.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon042.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon046.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon048.png">
-            <img class="box-shadow" src="images/MH Weapon Icons/ItemIcon057.png">
+        <div class="c1 box-shadow padding-left">
+            <button onclick="contact.goToHome()" class="btn btn-primary back-button">Back to Home</button>
+            <img class="padding-top" src="images/kfc-logo.png">
+            <br>
+            <br>
             <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nunc ac lorem commodo commodo. Aliquam varius magna ac risus laoreet venenatis. 
-                Suspendisse nec ipsum suscipit, dapibus ante vitae, faucibus purus. Nunc non sollicitudin leo. Cras ullamcorper enim arcu, quis interdum ex lobortis sit amet. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nunc ac lorem commodo commodo. Aliquam varius magna ac risus laoreet venenatis. 
+            Suspendisse nec ipsum suscipit, dapibus ante vitae, faucibus purus. Nunc non sollicitudin leo. Cras ullamcorper enim arcu, quis interdum ex lobortis sit amet. 
+            </p>
+            <br>
+            <p> 
+            Nullam in lorem mi. Donec efficitur purus sit amet enim egestas semper. Donec ultrices interdum tellus sed mollis. Vivamus metus augue, 
+            lacinia luctus finibus vitae, gravida vitae nunc. Nunc quis quam ac odio tincidunt aliquet eu vel augue. Proin elit tellus, faucibus non dignissim at, 
+            condimentum quis enim. Nam vel odio metus. In vitae magna aliquam, posuere ipsum sit amet, faucibus justo. Nam rutrum, est id semper dapibus, erat felis faucibus magna, 
+            </p>
+            <br>
+            <p> 
+            Maecenas eget lorem facilisis, mollis odio nec, hendrerit libero. Nullam ac sem nec magna suscipit suscipit. Phasellus neque est, 
+            maximus ac nibh sed, luctus sollicitudin libero. Etiam porttitor finibus erat a maximus. Sed tincidunt sem at tellus suscipit, vel interdum mi ullamcorper. 
             </p>
         </div>
-
-
-        <div class="c3 box-shadow">
-            <h2 class="txt-center">Recent Product</h2>
-        </div>
     </div>
+
 
     <div class="r3">
         Copyright 2019 Created by Joshuah Guerrero
     </div>
 
-
+    <script type="text/javascript" src="./js/contact.js"></script>
 </body>
 
 </html>
